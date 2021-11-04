@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@nguyenphu27/sdk'
+import { Currency, ETHER, Token } from 'fswap-sdk'
 
 export function currencyId(currency: Currency): string {
   if (currency === ETHER) return 'BNB'

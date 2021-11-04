@@ -1,14 +1,14 @@
 {
-  "name": "@nguyenphu27/uikit",git
-  "version": "0.2.1",
-  "description": "Set of UI components for pancake projects",
+  "name": "fswap-uikit",
+  "version": "0.0.1",
+  "description": "Set of UI components for Findora Swap projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/nguyenphu27/pancake-toolkit-testnet",
+  "repository": "https://github.com/layinka/fswap-toolkit-testnet",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",

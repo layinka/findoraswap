@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@nguyenphu27/sdk'
+import { ChainId, Token } from 'fswap-sdk'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'
@@ -54,7 +54,11 @@ export function listToTokenMap(list: TokenList): TokenAddressMap {
             return { ...list.tags[tagId], id: tagId }
           })
           ?.filter((x): x is TagInfo => Boolean(x)) ?? []
+
+          
+          
       const token = new WrappedTokenInfo(tokenInfo, tags)
+      
       if (tokenMap[token.chainId][token.address] !== undefined) throw Error('Duplicate tokens.')
       return {
         ...tokenMap,
@@ -71,7 +75,10 @@ export function listToTokenMap(list: TokenList): TokenAddressMap {
 }
 
 export function useTokenList(url: string | undefined): TokenAddressMap {
+
+
   const lists = useSelector<AppState, AppState['lists']['byUrl']>(state => state.lists.byUrl)
+  
   return useMemo(() => {
     if (!url) return EMPTY_LIST
     const current = lists[url]?.current

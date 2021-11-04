@@ -1,7 +1,7 @@
-import { CurrencyAmount, JSBI, Token, Trade } from '@nguyenphu27/sdk'
+import { CurrencyAmount, JSBI, Token, Trade } from 'fswap-sdk'
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { ArrowDown } from 'react-feather'
-import { CardBody, ArrowDownIcon, Button, IconButton, Text, Link } from '@nguyenphu27/uikit'
+import { CardBody, ArrowDownIcon, Button, IconButton, Text, Link } from 'fswap-uikit'
 import styled, { ThemeContext } from 'styled-components'
 import AddressInputPanel from 'components/AddressInputPanel'
 import Card, { GreyCard } from 'components/Card'
@@ -94,7 +94,7 @@ const Swap = () => {
   )
   const showWrap: boolean = wrapType !== WrapType.NOT_APPLICABLE
   const trade = showWrap ? undefined : v2Trade
-
+    console.log('trade:', trade)
   const parsedAmounts = showWrap
     ? {
         [Field.INPUT]: parsedAmount,

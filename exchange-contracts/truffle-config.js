@@ -76,6 +76,7 @@ module.exports = {
 	  findoraForge: {
       provider:()=> new HDWalletProvider(privateKey, `https://prod-forge.prod.findora.org:8545/`),
       network_id: 525,       // findorad evnet's id
+      timeoutBlocks: 200,
       skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },
     findoradevtnet: {
@@ -99,7 +100,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.6.6",    // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.6.12",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       settings: {          // See the solidity docs for advice about optimization and evmVersion
        optimizer: {

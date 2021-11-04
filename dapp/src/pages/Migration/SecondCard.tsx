@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
-import { Card, CardHeader, CardBody, Text, Box, Button, Flex, ArrowDownIcon, Link } from '@nguyenphu27/uikit'
-import { Pair } from '@nguyenphu27/sdk'
+import { Card, CardHeader, CardBody, Text, Box, Button, Flex, ArrowDownIcon, Link } from 'fswap-uikit'
+import { Pair } from 'fswap-sdk'
 import { useTokenBalancesWithLoadingIndicator } from 'state/wallet/hooks'
 import { toV2LiquidityToken, useTrackedTokenPairs } from 'state/user/hooks'
 import { StyledInternalLink } from 'components/Shared'

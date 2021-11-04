@@ -1,14 +1,14 @@
 {
-  "name": "@layinka/sdk",
+  "name": "fswap-sdk",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "🛠 An SDK for building applications on top of FindoraSwap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/nguyenphu27/pancake-swap-sdk-testnett",
+  "repository": "https://github.com/layinka/fswap-sdk",
   "keywords": [
     "pancakeswap",
     "bsc"

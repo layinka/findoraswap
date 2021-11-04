@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from 'react'
 import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, currencyEquals, ETHER, TokenAmount, WETH } from '@nguyenphu27/sdk'
-import { Button, CardBody, AddIcon, Text as UIKitText } from '@nguyenphu27/uikit'
+import { Currency, currencyEquals, ETHER, TokenAmount, WETH } from 'fswap-sdk'
+import { Button, CardBody, AddIcon, Text as UIKitText } from 'fswap-uikit'
 import { RouteComponentProps } from 'react-router-dom'
 import { LightCard } from 'components/Card'
 import { AutoColumn, ColumnCenter } from 'components/Column'
@@ -118,6 +118,7 @@ export default function AddLiquidity({
   async function onAdd() {
     if (!chainId || !library || !account) return
     const router = getRouterContract(chainId, library, account)
+    console.log('router is ', router); 
 
     const { [Field.CURRENCY_A]: parsedAmountA, [Field.CURRENCY_B]: parsedAmountB } = parsedAmounts
     if (!parsedAmountA || !parsedAmountB || !currencyA || !currencyB) {
@@ -187,7 +188,7 @@ export default function AddLiquidity({
         setAttemptingTxn(false)
         // we only care if the error is something _other_ than the user rejected the tx
         if (e?.code !== 4001) {
-          console.error(e)
+          console.error('Error adding:',e)
         }
       })
   }

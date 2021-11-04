@@ -1,6 +1,6 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@nguyenphu27/sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from 'fswap-sdk'
 
-export const ROUTER_ADDRESS = '0xDE2Db97D54a3c3B008a097B2260633E6cA7DB1AF'
+export const ROUTER_ADDRESS = '0xFce0ef9690eD67Bd48FDB2C01bddCC92240D4307'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -11,10 +11,10 @@ export const CAKE = new Token(
   ChainId.MAINNET,
   '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
   18,
-  'CAKE',
-  'PancakeSwap Token'
+  'FSWAP',
+  'FindoraSwap Token'
 )
-export const WBNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
+export const WBNB = new Token(ChainId.MAINNET, '0x0000000000000000000000000000000000001000', 18, 'FRA', 'FINDORA')
 export const DAI = new Token(ChainId.MAINNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
 export const BUSD = new Token(ChainId.MAINNET, '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', 18, 'BUSD', 'Binance USD')
 export const BTCB = new Token(ChainId.MAINNET, '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c', 18, 'BTCB', 'Binance BTC')
@@ -34,6 +34,16 @@ export const ETH = new Token(
   'Binance-Peg Ethereum Token'
 )
 
+export const CAKE_TEST = new Token(
+  ChainId.TESTNET,
+  '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+  18,
+  'FSWAP',
+  'FindoraSwap Token'
+)
+export const WBNB_TEST = new Token(ChainId.MAINNET, '0x0000000000000000000000000000000000001000', 18, 'FRA', 'FINDORA')
+export const DAI_TEST = new Token(ChainId.MAINNET, '0x3cBe826aC1ACfd97bBADe07FB4640B7D990BccB2', 18, 'DAI', 'Dai Stablecoin')
+
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
   [ChainId.TESTNET]: [WETH[ChainId.TESTNET]],
@@ -43,6 +53,7 @@ const WETH_ONLY: ChainTokenList = {
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, BTCB, USDT, UST, ETH],
+  [ChainId.TESTNET]: [...WETH_ONLY[ChainId.TESTNET], DAI_TEST],
 }
 
 /**
@@ -57,12 +68,14 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT],
+  [ChainId.TESTNET]: [...WETH_ONLY[ChainId.TESTNET], DAI_TEST],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, BTCB, USDT],
+  [ChainId.TESTNET]: [...WETH_ONLY[ChainId.TESTNET], DAI_TEST],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
@@ -70,6 +83,10 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
     [CAKE, WBNB],
     [BUSD, USDT],
     [DAI, USDT],
+  ],
+  [ChainId.TESTNET]: [
+    [CAKE_TEST, WBNB_TEST],
+    [DAI_TEST, WBNB_TEST],
   ],
 }
 

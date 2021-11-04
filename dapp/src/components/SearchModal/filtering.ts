@@ -1,4 +1,4 @@
-import { Token } from '@nguyenphu27/sdk'
+import { Token } from 'fswap-sdk'
 import { isAddress } from '../../utils'
 
 export function filterTokens(tokens: Token[], search: string): Token[] {

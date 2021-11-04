@@ -1,6 +1,6 @@
-import { Currency, ETHER, JSBI, TokenAmount } from '@nguyenphu27/sdk'
+import { Currency, ETHER, JSBI, TokenAmount } from 'fswap-sdk'
 import React, { useCallback, useEffect, useState } from 'react'
-import { Button, ChevronDownIcon, AddIcon, CardBody, Text } from '@nguyenphu27/uikit'
+import { Button, ChevronDownIcon, AddIcon, CardBody, Text } from 'fswap-uikit'
 import CardNav from 'components/CardNav'
 import { LightCard } from 'components/Card'
 import { AutoColumn, ColumnCenter } from 'components/Column'

@@ -1,3 +1,8 @@
+# 
+yarn add H:\Projects\Cryptos\Findora\FindoraSwap\ui-toolkit\fswap-uikit-v0.0.1.tgz
+yarn add H:\Projects\Cryptos\Findora\FindoraSwap\sdk\fswap-sdk-v1.0.1.tgz
+
+
 # 🥞 Pancake Swap Exchange Testnet
 
 Live at: https://pancakeswap-testnet.netlify.app/

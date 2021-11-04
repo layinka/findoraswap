@@ -3739,11 +3739,11 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.pancakeswap.finance",
+                href: "http://localhost:3600",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.pancakeswap.finance/#/pool",
+                href: "http://localhost:3600/#/pool",
             },
         ],
     },
@@ -3797,19 +3797,19 @@ var links = [
         items: [
             {
                 label: "Overview",
-                href: "https://pancakeswap.info",
+                href: "https://findoraswap.info",
             },
             {
                 label: "Tokens",
-                href: "https://pancakeswap.info/tokens",
+                href: "https://findoraswap.info/tokens",
             },
             {
                 label: "Pairs",
-                href: "https://pancakeswap.info/pairs",
+                href: "https://findoraswap.info/pairs",
             },
             {
                 label: "Accounts",
-                href: "https://pancakeswap.info/accounts",
+                href: "https://findoraswap.info/accounts",
             },
         ],
     },
@@ -3833,19 +3833,19 @@ var links = [
         items: [
             {
                 label: "Voting",
-                href: "https://voting.pancakeswap.finance",
+                href: "https://voting.findoraswap.finance",
             },
             {
                 label: "Github",
-                href: "https://github.com/pancakeswap",
+                href: "https://github.com/layinka",
             },
             {
                 label: "Docs",
-                href: "https://docs.pancakeswap.finance",
+                href: "https://docs.findoraswap.finance",
             },
             {
                 label: "Blog",
-                href: "https://pancakeswap.medium.com",
+                href: "https://findoraswap.medium.com",
             },
         ],
     },

@@ -2,7 +2,7 @@ pragma solidity 0.6.12;
 
 import "@pancakeswap/pancake-swap-lib/contracts/token/BEP20/BEP20.sol";
 
-import "./CakeToken.sol";
+import "./FSwapToken.sol";
 
 // SyrupBar with Governance.
 contract SyrupBar is BEP20('SyrupBar Token', 'SYRUP') {
@@ -18,11 +18,11 @@ contract SyrupBar is BEP20('SyrupBar Token', 'SYRUP') {
     }
 
     // The CAKE TOKEN!
-    CakeToken public cake;
+    FSwapToken public cake;
 
 
     constructor(
-        CakeToken _cake
+        FSwapToken _cake
     ) public {
         cake = _cake;
     }
@@ -139,9 +139,9 @@ contract SyrupBar is BEP20('SyrupBar Token', 'SYRUP') {
         );
 
         address signatory = ecrecover(digest, v, r, s);
-        require(signatory != address(0), "CAKE::delegateBySig: invalid signature");
-        require(nonce == nonces[signatory]++, "CAKE::delegateBySig: invalid nonce");
-        require(now <= expiry, "CAKE::delegateBySig: signature expired");
+        require(signatory != address(0), "FSWAP::delegateBySig: invalid signature");
+        require(nonce == nonces[signatory]++, "FSWAP::delegateBySig: invalid nonce");
+        require(now <= expiry, "FSWAP::delegateBySig: signature expired");
         return _delegate(signatory, delegatee);
     }
 
@@ -171,7 +171,7 @@ contract SyrupBar is BEP20('SyrupBar Token', 'SYRUP') {
         view
         returns (uint256)
     {
-        require(blockNumber < block.number, "CAKE::getPriorVotes: not yet determined");
+        require(blockNumber < block.number, "FSWAP::getPriorVotes: not yet determined");
 
         uint32 nCheckpoints = numCheckpoints[account];
         if (nCheckpoints == 0) {
@@ -244,7 +244,7 @@ contract SyrupBar is BEP20('SyrupBar Token', 'SYRUP') {
     )
         internal
     {
-        uint32 blockNumber = safe32(block.number, "CAKE::_writeCheckpoint: block number exceeds 32 bits");
+        uint32 blockNumber = safe32(block.number, "FSWAP::_writeCheckpoint: block number exceeds 32 bits");
 
         if (nCheckpoints > 0 && checkpoints[delegatee][nCheckpoints - 1].fromBlock == blockNumber) {
             checkpoints[delegatee][nCheckpoints - 1].votes = newVotes;

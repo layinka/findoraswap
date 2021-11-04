@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, JSBI } from '@nguyenphu27/sdk'
+import { CurrencyAmount, ETHER, JSBI } from 'fswap-sdk'
 import { MIN_ETH } from '../constants'
 
 /**

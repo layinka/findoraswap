@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState } from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
-import { Language } from '@nguyenphu27/uikit'
+import { Language } from 'fswap-uikit'
 import VersionBar from 'components/VersionBar'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
