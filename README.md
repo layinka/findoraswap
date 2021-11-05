@@ -97,6 +97,11 @@ cp .env.development .env
 
 - Update `WBNB` address at `node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.development.js`, `node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.production.min.js`, `node_modules/@pancakeswap-libs/sdk/dist/sdk.esm.js`
 
+- Update multicall contracts in /src/constants/multicall/index.ts(6,12)
+	``` const MULTICALL_NETWORKS: { [chainId in ChainId]: string } = {
+    5 |   [ChainId.MAINNET]: '0x1Ee38d535d541c55C9dae27B12edf090C608E6Fb',
+    6 |   [ChainId.BSCTESTNET]: '0x301907b5835a2d723Fe3e9E8C5Bc5375d5c1236A' ```
+
 - VERIFY CHANGES by `Find All` old addresses and replace new ones:
 	+ WBNB:            0xaE8E19eFB41e7b96815649A6a60785e1fbA84C1e
 	+ PancakeFactory:  0xBCfCcbde45cE874adCB698cC183deBcF17952812

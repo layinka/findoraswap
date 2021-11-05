@@ -1,6 +1,6 @@
 import React from 'react'
-import { Trade, TradeType } from '@pancakeswap-libs/sdk'
-import { Card, CardBody, Text } from '@pancakeswap-libs/uikit'
+import { Trade, TradeType } from 'fswap-sdk'
+import { Card, CardBody, Text } from 'fswap-uikit'
 import useI18n from 'hooks/useI18n'
 import { Field } from '../../state/swap/actions'
 import { useUserSlippageTolerance } from '../../state/user/hooks'
