@@ -102,6 +102,9 @@ cp .env.development .env
     5 |   [ChainId.MAINNET]: '0x1Ee38d535d541c55C9dae27B12edf090C608E6Fb',
     6 |   [ChainId.BSCTESTNET]: '0x301907b5835a2d723Fe3e9E8C5Bc5375d5c1236A' ```
 
+
+- Update BSCSCAN_PREFIXES (change chainids) in util/index
+
 - VERIFY CHANGES by `Find All` old addresses and replace new ones:
 	+ WBNB:            0xaE8E19eFB41e7b96815649A6a60785e1fbA84C1e
 	+ PancakeFactory:  0xBCfCcbde45cE874adCB698cC183deBcF17952812

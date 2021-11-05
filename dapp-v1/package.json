@@ -8,8 +8,6 @@
     "@binance-chain/bsc-connector": "^1.0.0",
     "@crowdin/crowdin-api-client": "^1.8.16",
     "@ethersproject/experimental": "^5.0.1",
-    "fswap-sdk": "H:\\Projects\\Cryptos\\Findora\\FindoraSwap\\sdk\\fswap-sdk-v1.0.4.tgz",
-    "fswap-uikit": "H:\\Projects\\Cryptos\\Findora\\FindoraSwap\\ui-toolkit\\fswap-uikit-v0.0.1.tgz",
     "@popperjs/core": "^2.4.4",
     "@reach/dialog": "^0.10.3",
     "@reach/portal": "^0.10.3",
@@ -37,7 +35,9 @@
     "ajv": "^6.12.3",
     "cids": "^1.0.0",
     "copy-to-clipboard": "^3.2.0",
-    "ethers": "^5.0.7",
+    "ethers": "5.5.1",
+    "fswap-sdk": "H:\\Projects\\Cryptos\\Findora\\FindoraSwap\\sdk\\fswap-sdk-v1.0.4.tgz",
+    "fswap-uikit": "H:\\Projects\\Cryptos\\Findora\\FindoraSwap\\ui-toolkit\\fswap-uikit-v0.0.2.tgz",
     "i18next": "^15.0.9",
     "i18next-browser-languagedetector": "^3.0.1",
     "i18next-xhr-backend": "^2.0.1",
@@ -80,9 +80,7 @@
     "start-server-and-test": "^1.11.0"
   },
   "resolutions": {
-    "@walletconnect/web3-provider": "1.1.1-alpha.0",
-    "@ethersproject/bignumber": "^5.5.0",
-    "@ethersproject/abstract-provider": "^5.5.0"
+    "@walletconnect/web3-provider": "1.1.1-alpha.0"
   },
   "scripts": {
     "start": "set HTTPS=true&&react-scripts start",
@@ -112,5 +110,4 @@
     ]
   },
   "license": "GPL-3.0-or-later"
-  
 }

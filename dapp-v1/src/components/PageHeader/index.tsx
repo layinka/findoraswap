@@ -12,7 +12,7 @@ interface PageHeaderProps {
 }
 
 const StyledPageHeader = styled.div`
-  border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};
+  border-bottom: 1px solid transparent;
   padding: 24px;
 `
 

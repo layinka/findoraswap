@@ -29,11 +29,12 @@ export const injected = new InjectedConnector({
   supportedChainIds: [525],
 })
 
-export const bscConnector = new BscConnector({ supportedChainIds: [97] })
+export const bscConnector = new BscConnector({ supportedChainIds: [525] })
 
 // mainnet only
 export const walletconnect = new WalletConnectConnector({
   rpc: { [NETWORK_CHAIN_ID]: NETWORK_URL },
+  
   bridge: 'https://bridge.walletconnect.org',
   qrcode: true,
   pollingInterval: 15000,
