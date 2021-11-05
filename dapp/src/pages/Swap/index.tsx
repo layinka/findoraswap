@@ -95,6 +95,7 @@ const Swap = () => {
   const showWrap: boolean = wrapType !== WrapType.NOT_APPLICABLE
   const trade = showWrap ? undefined : v2Trade
     console.log('trade:', trade)
+    console.log('v2Trade:', v2Trade)
   const parsedAmounts = showWrap
     ? {
         [Field.INPUT]: parsedAmount,

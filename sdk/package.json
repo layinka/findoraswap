@@ -1,7 +1,7 @@
 {
   "name": "fswap-sdk",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "🛠 An SDK for building applications on top of FindoraSwap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/layinka/fswap-sdk",
   "keywords": [
-    "pancakeswap",
+    "findoraswap",
     "bsc"
   ],
   "module": "dist/sdk.esm.js",

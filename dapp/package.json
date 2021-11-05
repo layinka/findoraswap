@@ -44,7 +44,7 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.0.0",
     "ethers": "^5.0.7",
-    "fswap-sdk": "H:\\Projects\\Cryptos\\Findora\\FindoraSwap\\sdk\\fswap-sdk-v1.0.2.tgz",
+    "fswap-sdk": "H:\\Projects\\Cryptos\\Findora\\FindoraSwap\\sdk\\fswap-sdk-v1.0.3.tgz",
     "fswap-uikit": "H:\\Projects\\Cryptos\\Findora\\FindoraSwap\\ui-toolkit\\fswap-uikit-v0.0.1.tgz",
     "i18next": "^15.0.9",
     "i18next-browser-languagedetector": "^3.0.1",
