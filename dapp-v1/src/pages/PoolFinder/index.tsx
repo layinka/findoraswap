@@ -33,6 +33,8 @@ export default function PoolFinder() {
   const [currency1, setCurrency1] = useState<Currency | null>(null)
 
   const [pairState, pair] = usePair(currency0 ?? undefined, currency1 ?? undefined)
+
+  console.log(`cur0: ${JSON.stringify( currency0)}, cur1: ${JSON.stringify( currency1)},  pair: ${pair},  pairsyaye: ${pairState}`)
   const addPair = usePairAdder()
 
   const TranslateString = useI18n()

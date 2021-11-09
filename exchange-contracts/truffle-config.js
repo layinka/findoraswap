@@ -76,7 +76,7 @@ module.exports = {
 	  findoraForge: {
       provider:()=> new HDWalletProvider(privateKey, `https://prod-forge.prod.findora.org:8545/`),
       network_id: 525,       // findorad evnet's id
-      timeoutBlocks: 200,
+      timeoutBlocks: 500,
       skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },
     findoradevtnet: {

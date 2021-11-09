@@ -36,7 +36,7 @@
     "cids": "^1.0.0",
     "copy-to-clipboard": "^3.2.0",
     "ethers": "5.5.1",
-    "fswap-sdk": "H:\\Projects\\Cryptos\\Findora\\FindoraSwap\\sdk\\fswap-sdk-v1.0.4.tgz",
+    "fswap-sdk": "H:\\Projects\\Cryptos\\Findora\\FindoraSwap\\sdk\\fswap-sdk-v1.0.5.tgz",
     "fswap-uikit": "H:\\Projects\\Cryptos\\Findora\\FindoraSwap\\ui-toolkit\\fswap-uikit-v0.0.2.tgz",
     "i18next": "^15.0.9",
     "i18next-browser-languagedetector": "^3.0.1",

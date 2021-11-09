@@ -21,7 +21,7 @@ export default async function getTokenList(
   resolveENSContentHash: (ensName: string) => Promise<string>
 ): Promise<TokenList> {
 
-  console.log('listUrl:', listUrl, ', def:',DEFAULT_TOKEN_LIST_URL )
+  
   if (listUrl === DEFAULT_TOKEN_LIST_URL) {
     return defaultTokenJson
   }

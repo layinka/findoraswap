@@ -18,7 +18,7 @@ export enum PairState {
 
 export function usePairs(currencies: [Currency | undefined, Currency | undefined][]): [PairState, Pair | null][] {
   const { chainId } = useActiveWeb3React()
-
+  
   const tokens = useMemo(
     () =>
       currencies.map(([currencyA, currencyB]) => [
@@ -27,7 +27,7 @@ export function usePairs(currencies: [Currency | undefined, Currency | undefined
       ]),
     [chainId, currencies]
   )
-
+  
   const pairAddresses = useMemo(
     () =>
       tokens.map(([tokenA, tokenB]) => {
@@ -37,7 +37,7 @@ export function usePairs(currencies: [Currency | undefined, Currency | undefined
   )
 
   const results = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'getReserves')
-
+  console.log('results:', results)
   return useMemo(() => {
     return results.map((result, i) => {
       const { result: reserves, loading } = result
