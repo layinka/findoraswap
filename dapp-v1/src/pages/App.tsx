@@ -60,7 +60,7 @@ const Marginer = styled.div`
   margin-top: 5rem;
 `
 
-const CACHE_KEY = 'pancakeSwapLanguage'
+const CACHE_KEY = 'findoraSwapLanguage'
 
 export default function App() {
   const [selectedLanguage, setSelectedLanguage] = useState<any>(undefined)

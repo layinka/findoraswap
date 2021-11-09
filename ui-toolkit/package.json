@@ -1,6 +1,6 @@
 {
   "name": "fswap-uikit",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Set of UI components for Findora Swap projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",

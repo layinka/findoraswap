@@ -12022,9 +12022,9 @@ fsevents@~2.1.2:
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"fswap-uikit@file:../ui-toolkit/fswap-uikit-v0.0.2.tgz":
-  version "0.0.2"
-  resolved "file:../ui-toolkit/fswap-uikit-v0.0.2.tgz#770cba53cfbfd4e3b4ddcef3e5d53a4a4f89e88d"
+"fswap-uikit@file:../ui-toolkit/fswap-uikit-v0.0.5.tgz":
+  version "0.0.5"
+  resolved "file:../ui-toolkit/fswap-uikit-v0.0.5.tgz#5ed5bc37f7f3812a68c7d8e1b081a99f2e4bf374"
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@rollup/plugin-url" "^6.0.0"
